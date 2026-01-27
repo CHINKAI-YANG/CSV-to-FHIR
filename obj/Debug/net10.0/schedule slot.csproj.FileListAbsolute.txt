@@ -1,0 +1,44 @@
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\appsettings.json
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\schedule slot.staticwebassets.endpoints.json
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\schedule slot.exe
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\schedule slot.deps.json
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\schedule slot.runtimeconfig.json
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\schedule slot.dll
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\schedule slot.pdb
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\CsvHelper.dll
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\Fhir.Metrics.dll
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\Hl7.Fhir.Base.dll
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\Hl7.Fhir.Conformance.dll
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\Hl7.Fhir.R4.dll
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\Newtonsoft.Json.dll
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\schedule slot.csproj.AssemblyReference.cache
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\schedule slot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\schedule slot.AssemblyInfoInputs.cache
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\schedule slot.AssemblyInfo.cs
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\schedule slot.csproj.CoreCompileInputs.cache
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\schedule slot.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\schedule slot.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\scopedcss\bundle\schedule slot.styles.css
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\schedule.6239B695.Up2Date
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\schedule slot.dll
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\refint\schedule slot.dll
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\schedule slot.pdb
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\schedule slot.genruntimeconfig.cache
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\ref\schedule slot.dll
+C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\schedule slot.staticwebassets.runtime.json
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\compressed\u8tr6bg2as-{0}-8hb7fa7ojz-8hb7fa7ojz.gz
