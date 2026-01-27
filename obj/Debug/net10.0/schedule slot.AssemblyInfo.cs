@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("schedule slot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5d02652b168d410fd93fa23ee3bd368b0696f62")]
 [assembly: System.Reflection.AssemblyProductAttribute("schedule slot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("schedule slot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
