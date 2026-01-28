@@ -40,65 +40,68 @@
     </div>
 
     <script>
-        let currentJsonBlob = null;
+    let currentJsonBlob = null;
 
-        async function uploadFile() {
-            const fileInput = document.getElementById('csvFile');
-            const resultSection = document.getElementById('resultSection');
-            const jsonResult = document.getElementById('jsonResult');
-            const statusText = document.getElementById('statusText');
-            const downloadBtn = document.getElementById('downloadBtn');
+    async function uploadFile() {
+        const fileInput = document.getElementById('csvFile');
+        const resultSection = document.getElementById('resultSection');
+        const jsonResult = document.getElementById('jsonResult');
+        const statusText = document.getElementById('statusText');
+        const downloadBtn = document.getElementById('downloadBtn');
 
-            if (!fileInput.files[0]) {
-                alert("請先選擇檔案！");
-                return;
-            }
-
-            const formData = new FormData();
-            formData.append('file', fileInput.files[0]);
-
-            // 重置介面
-            statusText.innerText = "⏳ 正在處理中，請稍候...";
-            statusText.style.color = "#34495e";
-            jsonResult.innerText = "";
-            resultSection.style.display = 'block';
-            downloadBtn.style.display = 'none';
-
-            try {
-                const response = await fetch('/api/ScheduleUpload/upload', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                const data = await response.text();
-
-                if (response.ok) {
-                    const jsonObj = JSON.parse(data);
-                    jsonResult.innerText = JSON.stringify(jsonObj, null, 4);
-                    jsonResult.className = "";
-                    statusText.innerText = "✅ 轉換成功！所有時段驗證通過。";
-                    statusText.style.color = "#27ae60";
-
-                    // 準備下載功能
-                    const blob = new Blob([JSON.stringify(jsonObj, null, 4)], { type: 'application/json' });
-                    const url = URL.createObjectURL(blob);
-                    downloadBtn.style.display = 'inline-block';
-                    downloadBtn.onclick = () => {
-                        const a = document.createElement('a');
-                        a.href = url;
-                        a.download = `FHIR_Slots_${new Date().getTime()}.json`;
-                        a.click();
-                    };
-                } else {
-                    jsonResult.innerHTML = `<div class="error">${data}</div>`;
-                    statusText.innerText = "❌ 轉換失敗：發現數據異常";
-                    statusText.style.color = "#e74c3c";
-                }
-            } catch (error) {
-                jsonResult.innerHTML = `<div class="error">無法連線至後端 API，請確認 dotnet 是否正在執行。</div>`;
-                statusText.innerText = "❌ 連線錯誤";
-            }
+        if (!fileInput.files[0]) {
+            alert("請先選擇檔案！");
+            return;
         }
-    </script>
+
+        const formData = new FormData();
+        formData.append('file', fileInput.files[0]);
+
+        // 重置介面
+        statusText.innerText = "⏳ 正在處理多筆資料與驗證時間衝突...";
+        statusText.style.color = "#34495e";
+        jsonResult.innerText = "";
+        resultSection.style.display = 'block';
+        downloadBtn.style.display = 'none';
+
+        try {
+            // 這裡改回原本的多筆上傳 API 路徑
+            const response = await fetch('/api/ScheduleUpload/upload', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.text();
+
+            if (response.ok) {
+                // 成功：解析並顯示 FHIR Bundle
+                const jsonObj = JSON.parse(data);
+                jsonResult.innerText = JSON.stringify(jsonObj, null, 4);
+                jsonResult.className = ""; // 移除 error class
+                statusText.innerText = "✅ 轉換成功！多筆時段已打包為 FHIR Bundle。";
+                statusText.style.color = "#27ae60";
+
+                // 下載功能
+                const blob = new Blob([JSON.stringify(jsonObj, null, 4)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                downloadBtn.style.display = 'inline-block';
+                downloadBtn.onclick = () => {
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `FHIR_Bundle_Slots_${new Date().getTime()}.json`;
+                    a.click();
+                };
+            } else {
+                // 失敗：顯示後端傳來的驗證錯誤（例如：時間衝突）
+                jsonResult.innerHTML = `<div class="error">${data}</div>`;
+                statusText.innerText = "❌ 轉換失敗：邏輯驗證未通過";
+                statusText.style.color = "#e74c3c";
+            }
+        } catch (error) {
+            jsonResult.innerHTML = `<div class="error">連線失敗：請檢查後端 dotnet run 是否正常啟動。</div>`;
+            statusText.innerText = "❌ 系統連線錯誤";
+        }
+    }
+</script>
 </body>
 </html>

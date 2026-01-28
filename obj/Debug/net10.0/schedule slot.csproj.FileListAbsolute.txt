@@ -41,5 +41,5 @@ C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\schedule slot.pdb
 C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\schedule slot.genruntimeconfig.cache
 C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\ref\schedule slot.dll
 C:\Users\楊晉凱\Desktop\schedule slot\bin\Debug\net10.0\schedule slot.staticwebassets.runtime.json
-C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\compressed\u8tr6bg2as-{0}-8hb7fa7ojz-8hb7fa7ojz.gz
 C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\schedule slot.sourcelink.json
+C:\Users\楊晉凱\Desktop\schedule slot\obj\Debug\net10.0\compressed\u8tr6bg2as-{0}-w03lvsn9bd-w03lvsn9bd.gz
